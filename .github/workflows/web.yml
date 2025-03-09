@@ -44,6 +44,7 @@ jobs:
       - run: yarn test
 
   build:
+    if: always()
     needs: [eslint, test]
 
     environment:
